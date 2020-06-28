@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/upper/upper",
+    "pages/income/income",
+    "pages/my/my",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#ECECEB"
+  },
+  "tabBar": {
+    "selectedColor": "#DE6110",
+    "backgroundColor": "#919191",
+    "borderStyle": "black",
+    "position": "bottom",
+    "color": "#fff",
+    "list": [{
+      "pagePath": "pages/upper/upper",
+      "text": "上新",
+      "iconPath": "./lib/images/tabbar10.png",
+      "selectedIconPath": "./lib/images/tabbar11.png"
+    }, {
+      "pagePath": "pages/income/income",
+      "text": "收益",
+      "iconPath": "./lib/images/tabbar20.png",
+      "selectedIconPath": "./lib/images/tabbar21.png"
+    }, {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "./lib/images/tabbar30.png",
+      "selectedIconPath": "./lib/images/tabbar31.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile0": 10000
+  }
+}
