@@ -3,7 +3,9 @@
     "pages/upper/upper",
     "pages/income/income",
     "pages/my/my",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/coustomAppo/getAppo/getAppo",
+    "pages/coustomAppo/modifyAppo/modifyAppo"
   ],
   "window":{
     "backgroundTextStyle":"dark",

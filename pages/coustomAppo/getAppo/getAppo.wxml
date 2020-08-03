@@ -1,0 +1,29 @@
+<!--pages/coustomAppo/getAppo/getAppo.wxml-->
+<view class="page">
+  <view class="tap-bar">
+    <view wx:if="{{isNewAppo}}" class="choose" bindtap="showNewAppo">新预约</view>
+    <view wx:if="{{!isNewAppo}}" class="unchoose" bindtap="showNewAppo">新预约</view>
+    <view wx:if="{{isStart}}" class="choose" bindtap="showStartAppo">待开始</view>
+    <view wx:if="{{!isStart}}" class="unchoose" bindtap="showStartAppo">待开始</view>
+    <view wx:if="{{isEnd}}" class="choose" bindtap="showEndAppo">已结束</view>
+    <view wx:if="{{!isEnd}}" class="unchoose" bindtap="showEndAppo">已结束</view>
+    <view wx:if="{{isCancel}}" class="choose" bindtap="showCancelAppo">已取消</view>
+    <view wx:if="{{!isCancel}}" class="unchoose" bindtap="showCancelAppo">已取消</view>
+  </view>
+  <view class="custom-appo">
+    <!-- 新预约 -->
+    <view wx:if="{{isNewAppo}}" wx:for="{{customAppo}}">
+      <view data-appoint_id="{{item.appoint_id}}" class="custom-appo-list">
+        <view>
+          <view>预约人: {{item.open_id}}</view>
+          <view>预约时间: {{item.date}}</view>
+          <view>预约项目: {{item.item}}</view>
+        </view>
+        <view class="opera">
+          <view style="border-bottom: 1px solid #ccc">操作</view>
+          <view>转交</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
