@@ -5,7 +5,9 @@
     "pages/my/my",
     "pages/index/index",
     "pages/coustomAppo/getAppo/getAppo",
-    "pages/coustomAppo/modifyAppo/modifyAppo"
+    "pages/coustomAppo/modifyAppo/modifyAppo",
+    "pages/shopper/shopperInfo/shopperInfo",
+    "pages/shopper/modifyShopper/modifyShopper"
   ],
   "window":{
     "backgroundTextStyle":"dark",

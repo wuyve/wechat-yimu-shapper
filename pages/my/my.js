@@ -159,10 +159,29 @@ Page({
       }
     })
   },
-  // 获取用户预约项目
-  custom_appoint: function () {
+  // 跳转页面
+  tap: function (e) {
+    let jumpUrl = e.currentTarget.dataset.event;
+    let url = ''
+    switch (jumpUrl) {
+      case 'appoint': 
+        url = '../coustomAppo/getAppo/getAppo';
+        break;
+      case 'order':
+        url = '';
+        break;
+      case 'coupon':
+        url = '';
+        break;
+      case 'shopper':
+        url = '../shopper/shopperInfo/shopperInfo';
+        break;
+      case 'feedback':
+        url = '';
+        break;
+    }
     wx.navigateTo({
-      url: '../coustomAppo/getAppo/getAppo?customAppo=',
+      url,
       fail (res) {
         console.log(res);
       }

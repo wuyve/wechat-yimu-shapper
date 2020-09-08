@@ -28,4 +28,12 @@
   padding-top: 2%;
   padding-bottom: 2%;
   border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+.function-img {
+  width: 43rpx;
+  height: 43rpx;
+  margin: 5rpx;
+  margin-right: 5rpx;
 }

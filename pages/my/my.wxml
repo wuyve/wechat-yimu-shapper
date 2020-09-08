@@ -8,10 +8,25 @@
     </view>
   </view>
   <view class="function">
-    <view class="custom-appo" bindtap="custom_appoint">客户预约</view>
-    <view class="custom-appo">用户订单</view>
-    <view class="custom-appo">优惠券设置</view>
-    <view class="custom-appo">商家信息</view>
-    <view class="custom-appo">问题反馈</view>
+    <view class="custom-appo" data-event="appoint" bindtap="tap">
+      <image class="function-img" src="../../lib/images/预约.png"></image>
+      客户预约
+    </view>
+    <view class="custom-appo" data-event="order" bindtap="tap">
+      <image class="function-img" src="../../lib/images/订单.png"></image>
+      用户订单
+    </view>
+    <view class="custom-appo" data-event="coupon" bindtap="tap">
+      <image class="function-img" src="../../lib/images/优惠券.png"></image>
+      优惠券设置
+    </view>
+    <view class="custom-appo" data-event="shopper" bindtap="tap">
+      <image class="function-img" src="../../lib/images/商家.png"></image>
+      商家信息
+    </view>
+    <view class="custom-appo" data-event="feedback" bindtap="tap">
+      <image class="function-img" src="../../lib/images/反馈.png"></image>
+      问题反馈
+    </view>
   </view>
 </view>
